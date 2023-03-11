@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.showcase {
+  min-height: 100vh;
+  background: linear-gradient(rgba(15, 65, 150, 0.8), rgba(13, 46, 177, 0.8)),
+    url("./images/bg.jpg") no-repeat center center/cover;
+  background-blend-mode: darken;
+  padding: 0 7rem;
+  position: relative;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.showcase .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content button {
+  padding: 11px 24px;
+  border-radius: 20px;
+  background: #fff;
+  color: black;
+  margin-top: 1rem;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.services {
+  padding: 2rem 7rem;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  text-align: center;
+}
+
+.services-container img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.service-box h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.service-box p {
+  font-size: 15px;
+}
+
+.about {
+  padding: 2rem 7rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.about p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.contact {
+  padding: 2rem 7rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.contact p {
+  font-size: 16px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-family: inherit;
+  border-radius: 6px;
+}
+
+.contact textarea {
+  height: 100px;
+}
+
+.contact button {
+  padding: 12px 20px;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: #011167;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 760px) {
+  .showcase {
+    padding: 0 2rem;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+
+  .about img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .services {
+    padding: 2rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    padding: 2rem;
+  }
+
+  .contact {
+    padding: 2rem;
+  }
+}
